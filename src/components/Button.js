@@ -1,4 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
+/* eslint-disable import/no-extraneous-dependencies */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -8,6 +10,12 @@ class Button extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    const { handleClick } = this.props;
+    handleClick(e.target.innerText);
   }
 
   render() {
@@ -16,6 +24,7 @@ class Button extends React.Component {
       <button
         type="button"
         className={`${buttonClass}`}
+        onClick={this.handleClick}
       >
         {item}
       </button>
@@ -28,9 +37,11 @@ export default Button;
 Button.propTypes = {
   item: PropTypes.string,
   buttonClass: PropTypes.string,
+  handleClick: PropTypes.func,
 };
 
 Button.defaultProps = {
   item: undefined,
   buttonClass: 'btn',
+  handleClick: () => {},
 };
