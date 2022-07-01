@@ -3,6 +3,7 @@
   font-family: var(--font-titles);
   background-color: var(--color-ligth-gray);
   border: 1px solid var(--color-secondary-gray);
+  cursor: pointer;
 }
 
 .result {
