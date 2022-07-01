@@ -1,0 +1,17 @@
+.calculator{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.calculator__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    font-family: var(--font-titles);
+    font-size: 2rem;
+    width: 80%;
+    height: 60vh;
+}
