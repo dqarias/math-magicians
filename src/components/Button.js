@@ -2,34 +2,27 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import './Button.css';
 
-class Button extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(e) {
-    const { handleClick } = this.props;
+const Button = (props) => {
+  const handleClick = (e) => {
+    const { handleClick } = props;
     handleClick(e.target.innerText);
-  }
+  };
 
-  render() {
-    const { item, buttonClass } = this.props;
-    return (
-      <button
-        type="button"
-        className={`${buttonClass}`}
-        onClick={this.handleClick}
-      >
-        {item}
-      </button>
-    );
-  }
-}
+  const { item, buttonClass } = props;
+
+  return (
+
+    <button
+      type="button"
+      className={`${buttonClass}`}
+      onClick={handleClick}
+    >
+      {item}
+    </button>
+  );
+};
 
 export default Button;
 
