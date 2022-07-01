@@ -7,19 +7,18 @@
 }
 
 :root {
-    font-size: 62.5%;
-  }
+  font-size: 62.5%;
+}
 
-  body {
-    --color-primary-orange: #f99231f0;
-    --color-ligth-gray: #ebe8e8;
-    --color-primary-black: #111;
-    --color-primary-gray: #8d89a0;
-    --color-secondary-gray: #c9c5c5;
-    --color-tertiary-gray: #1e1e1eab;
-    --color-primary-white: #fff;
-    --color-secondary-white: #eaeaea;
-    --font-titles: "Montserrat", sans-serif;
-    --font-subtitles: "Montserrat", sans-serif;
-    
-  }
+body {
+  --color-primary-orange: #f99231f0;
+  --color-ligth-gray: #ebe8e8;
+  --color-primary-black: #111;
+  --color-primary-gray: #8d89a0;
+  --color-secondary-gray: #c9c5c5;
+  --color-tertiary-gray: #1e1e1eab;
+  --color-primary-white: #fff;
+  --color-secondary-white: #eaeaea;
+  --font-titles: "Montserrat", sans-serif;
+  --font-subtitles: "Montserrat", sans-serif;
+}
