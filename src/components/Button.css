@@ -2,10 +2,11 @@
     font-size: 2rem;
     font-family: var(--font-titles);
     background-color: var(--color-ligth-gray);
-    border: 1px solid var(--color-primary-gray);
+    border: 1px solid var(--color-secondary-gray);
 }
 
 .result{
+    font-size: 3rem;
     background-color: var(--color-primary-gray);
     color: var(--color-primary-white);
     grid-area: 1/1/2/5;
