@@ -1,5 +1,4 @@
 /* eslint-disable react/prefer-stateless-function */
-/* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
 import PropTypes from 'prop-types';
