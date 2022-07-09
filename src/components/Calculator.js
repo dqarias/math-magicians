@@ -45,25 +45,30 @@ const Calculator = () => {
   };
 
   return (
+    <div className="main__container">
+      <div className="text-container-calc">
+        <p className="main__subtitle">Lets do some math!</p>
+      </div>
+      <div className="calculator">
+        <div className="calculator__container">
+          <div className="result">
+            {next || total || '0'}
+          </div>
+          <div className="operation__column">
+            {buttonOperation(operColum)}
+          </div>
+          <div className="operation__row">
+            {buttonOperation(operRow)}
+          </div>
+          <div className="numbers">
+            {buttonNumber()}
+          </div>
 
-    <div className="calculator">
-      <div className="calculator__container">
-        <div className="result">
-          {next || total || '0'}
-        </div>
-        <div className="operation__column">
-          {buttonOperation(operColum)}
-        </div>
-        <div className="operation__row">
-          {buttonOperation(operRow)}
-        </div>
-        <div className="numbers">
-          {buttonNumber()}
         </div>
 
       </div>
-
     </div>
+
   );
 };
 

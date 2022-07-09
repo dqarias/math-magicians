@@ -1,0 +1,39 @@
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  font-family: var(--font-titles);
+  font-size: 1.6rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 100vw;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-logo {
+  display: none;
+}
+
+.navbar-list {
+  padding-right: 16px;
+}
+
+.navbar-link {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-container {
+    justify-content: space-between;
+  }
+
+  .navbar-logo {
+    display: block;
+    color: var(--color-primary-orange);
+    font-size: 1.8rem;
+  }
+}
