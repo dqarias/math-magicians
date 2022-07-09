@@ -1,15 +1,15 @@
-.main__container{
- margin-top: 5%;
- display: flex;
-flex-direction: column;
- font-family: var(--font-titles);
- width: 100vw;
+.main__container {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-titles);
+  width: 100vw;
 }
 
-.main__subtitle{
-font-size: 1.6rem;
-margin-left: 1.6rem;
-padding-bottom: 2.4rem;
+.main__subtitle {
+  font-size: 1.6rem;
+  margin-left: 1.6rem;
+  padding-bottom: 2.4rem;
 }
 
 .calculator {
@@ -28,33 +28,35 @@ padding-bottom: 2.4rem;
 }
 
 @media only screen and (min-width: 768px) {
-
-  .main__container{
+  .main__container {
     flex-direction: row;
     width: 100%;
     padding: 0 8%;
   }
-  .text-container-calc{
+
+  .text-container-calc {
     width: 30%;
   }
-  .main__subtitle{
+
+  .main__subtitle {
     font-size: 3rem;
-    }
-  .calculator{
+  }
+
+  .calculator {
     width: 70%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
+  .text-container-calc {
+    width: 50%;
+  }
 
-  .text-container-calc{
-    width: 50%;
-  }
-  .main__subtitle{
+  .main__subtitle {
     margin-left: 6rem;
-    }
-  .calculator{
+  }
+
+  .calculator {
     width: 50%;
   }
-  
 }
